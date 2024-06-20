@@ -22,4 +22,20 @@
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/44b107cc-6c0a-49fc-9483-06bf3f3ab6e1)
 
 - Tiến hành giải nén file, file có mật khẩu. Sử dụng john the ripper để crack mật khẩu.
-  
+- Task 4: What script comes with the John The Ripper toolset and generates a hash from a password protected zip archive in a format to allow for cracking attempts?: zip2john
+
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/be6c18c3-dfe3-47bd-b66a-46d8aa6b6f24)
+
+- Crack không được, ta dùng wordlist để bẻ khóa (dùng wordlist rockyou.txt)
+
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/e74ef254-78ba-4728-9eae-54320ebb52d1)
+
+- lấy được password: 741852963
+- Tiến hành giải nén file backup được 2 file là index.php và style.css
+- Ta quan tâm đến file index.php
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/1a19ce53-dbad-4f3f-ad70-4bb1e0b322d6)
+
+- Thấy được user là admin là mật khẩu là 1 mã hax: dùng tiếp john the ripper để crack.
+- Chạy không ra => dùng hashcat 
+
+- Task 5: What is the password for the admin user on the website?: 
