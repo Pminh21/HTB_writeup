@@ -39,5 +39,5 @@
 - Chạy không ra => dùng hashcat 
 - hashcat -m 0 -a 0 vaccine2.txt /usr/share/wordlists/rockyou.txt
 - trong đó -m là hash mode 0 là md5, -a attack mode  0 | Straight
-- 
-- Task 5: What is the password for the admin user on the website?: 
+- Task 5: What is the password for the admin user on the website?: qwerty789
+- Task 6: What option can be passed to sqlmap to try to get command execution via the sql injection?: --os-shell
