@@ -37,5 +37,7 @@
 
 - Thấy được user là admin là mật khẩu là 1 mã hax: dùng tiếp john the ripper để crack.
 - Chạy không ra => dùng hashcat 
-
+- hashcat -m 0 -a 0 vaccine2.txt /usr/share/wordlists/rockyou.txt
+- trong đó -m là hash mode 0 là md5, -a attack mode  0 | Straight
+- 
 - Task 5: What is the password for the admin user on the website?: 
