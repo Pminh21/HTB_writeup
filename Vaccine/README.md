@@ -64,3 +64,5 @@
       export TERM=xterm
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/4691fbcf-a4c7-412e-a7ce-77da3fb87460)
 
+- Cat user.txt ra được flag 1
+- ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/580a4340-46f4-4546-b392-9dc49a411e43)
