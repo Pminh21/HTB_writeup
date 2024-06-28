@@ -66,3 +66,10 @@
 
 - Cat user.txt ra được flag 1
 - ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/580a4340-46f4-4546-b392-9dc49a411e43)
+
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/49499894-6444-4431-82e2-e97c685c28f2)
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/85c4e920-dd0f-403f-9ce4-ea314001fb8b)
+
+- ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/4e31f8eb-2564-4dfd-8206-464e75e3acf8)
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/a4ecc9d8-daad-4f01-98c5-4630a8b53d2a)
+
