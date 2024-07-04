@@ -18,4 +18,8 @@ Ip mục tiêu là: 10.129.115.161
 - Sớt google ra được CVE-2021-44228
 - Task 4: What is the CVE for the identified vulnerability? CVE-2021-44228
 - (https://blog.viettelcybersecurity.com/cve-2021-44228-lo-hong-nghiem-trong-tren-thu-vien-apache-log4j-va-cac-van-de-lien-quan/)
-- 
+-  Task 5: What protocol does JNDI leverage in the injection? LDAP
+-  LDAP: một giao thức truy cập cơ sở dữ liệu phân tán, được sử dụng để quản lý và truy xuất thông tin trong một môi trường mạng máy tính, sử dụng mô hình client-server.
+-  Ifconfig ra
+-  ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/a8f802fb-e1c3-4ba8-a1cc-c81b5788613f)
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/13332173-a228-4541-a6d6-6599f510641c)
