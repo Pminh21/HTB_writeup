@@ -17,4 +17,5 @@ Ip mục tiêu là: 10.129.115.161
 - Task 3: What is the version of the software that is running? 6.4.54
 - Sớt google ra được CVE-2021-44228
 - Task 4: What is the CVE for the identified vulnerability? CVE-2021-44228
+- (https://blog.viettelcybersecurity.com/cve-2021-44228-lo-hong-nghiem-trong-tren-thu-vien-apache-log4j-va-cac-van-de-lien-quan/)
 - 
