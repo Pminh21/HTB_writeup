@@ -20,6 +20,10 @@ ip: 10.129.95.185
   + Dấu hiệu để nhận biết rằng trang web có thể tấn công file inclusion là đường link thường có dạng php?page=,hoặc php?file= ....
 - Tiến hành khai thác thử: nhập ?file=/../../../../../etc/passwd
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/260315f0-b89f-4c45-b646-e348ce3a3e73)
+- "tftp:x:110:113:tftp daemon,,,:/var/lib/tftpboot:/usr/sbin/nologin" 
+- Task 3: What is the default system folder that TFTP uses to store files? /var/lib/tftpboot/ 
 - Được luôn, ta thấy tên người dùng là mike.
 - TFTP là giao thức chia sẻ file sinh ra từ năm 1970, cổ lỗ quá nên thiếu bảo mật, không yêu cầu xác thực người dùng.
-- Không có chức năng lỉệt kê thư mục, đẩy 1 shell
+- Không có chức năng lỉệt kê thư mục, đẩy 1 shell.php
+- Lấy file có sẵn từ kali. Thay đổi ip của máy tấn công và đổi cổng thành 1234.
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/f70adc82-33d4-4dd4-b64f-5b6f471a552b)
