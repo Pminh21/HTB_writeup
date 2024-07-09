@@ -26,4 +26,28 @@ ip: 10.129.95.185
 - TFTP là giao thức chia sẻ file sinh ra từ năm 1970, cổ lỗ quá nên thiếu bảo mật, không yêu cầu xác thực người dùng.
 - Không có chức năng lỉệt kê thư mục, đẩy 1 shell.php
 - Lấy file có sẵn từ kali. Thay đổi ip của máy tấn công và đổi cổng thành 1234.
-![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/f70adc82-33d4-4dd4-b64f-5b6f471a552b)
+- ip mục tiêu đổi thành: 10.129.49.22
+
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/8d2609be-1701-401c-a077-341c9584f069)
+
+- sau khi put lên, mở nc sử dụng cổng ta đã điền trong shell.php. Cổng 1337
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/83f9e74e-3cd3-4748-b9ff-0944e856e6e2)
+
+- Cd vào thư mục var/www/html sử dụng lệnh ls -al để xem file ẩn.
+
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/2ad603ce-8a7a-4e12-81ef-317a12b31c53)
+
+- Thấy được tên người dùng là mike như trước đó pass là: Sheffield19
+- sử dụng lệnh su mike nhập mk: Sheffield19 để thay đổi user
+- cd home, ls ta thấy có 1 file là user.txt tiến hành đọc file ra
+- ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/11804040-01a7-4803-ac9b-132024402fce)
+
+- Nhập lệnh ID
+
+  ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/13115e20-c5af-418b-8f69-41d600abe853)
+
+  - LXD là 1 trình quản lý contaniner cho hệ thống, người dùng ở nhóm lxd sẽ được quyền sudo mặc dù không được cấp mật khẩu root hay được cấp quyền sudo.
+  - 
+
+
+
