@@ -33,6 +33,7 @@ ip: 10.129.95.185
 - sau khi put lên, mở nc sử dụng cổng ta đã điền trong shell.php. Cổng 1337
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/83f9e74e-3cd3-4748-b9ff-0944e856e6e2)
 
+- Để shell hoạt động tốt hơn nhập lệnh: python3 -c 'import pty;pty.spawn("/bin/bash")'
 - Cd vào thư mục var/www/html sử dụng lệnh ls -al để xem file ẩn.
 
 ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/2ad603ce-8a7a-4e12-81ef-317a12b31c53)
