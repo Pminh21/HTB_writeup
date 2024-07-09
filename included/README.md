@@ -47,8 +47,18 @@ ip: 10.129.95.185
 
   ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/13115e20-c5af-418b-8f69-41d600abe853)
 
-  - LXD là 1 trình quản lý contaniner cho hệ thống, người dùng ở nhóm lxd sẽ được quyền sudo mặc dù không được cấp mật khẩu root hay được cấp quyền sudo.
-  - 
+- LXD là 1 trình quản lý contaniner cho hệ thống, người dùng ở nhóm lxd sẽ được quyền sudo mặc dù không được cấp mật khẩu root hay được cấp quyền sudo.
+- (https://book.hacktricks.xyz/linux-hardening/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation)
+- Sử dụng phương pháp thứ 2.
+
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/0e9ae4ef-4db6-4b9b-bef5-426ba0893385)
+
+- tạo 1 sever http 
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/521a513e-3a5d-43dc-b254-8b12ea1052a4)
+- 
+![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/791d50a7-ec85-4af3-afe7-c580477b4958)
+
+
 
 
 
