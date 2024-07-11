@@ -21,4 +21,6 @@
 
 - Bật burp suite bắt request. Thì thấy ngay phiên bản là 1.0
 - Task 5: What does the XXE / XEE attack acronym stand for?: XML External Entity
+- (https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity)
+- trong khi quét nmap ta nhận biết được hệ điều hành của mục tiêu là windowns 10
 - 
