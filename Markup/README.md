@@ -23,4 +23,5 @@
 - Task 5: What does the XXE / XEE attack acronym stand for?: XML External Entity
 - (https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity)
 - trong khi quét nmap ta nhận biết được hệ điều hành của mục tiêu là windowns 10
+- Ta sẽ sử dụng <!DOCTYPE foo [ <!ENTITY ext SYSTEM "file:///etc/passwd" > ]> để lấy file rsa của daniel. Thư mục C:\Users\your_username\.ssh\.
 - 
