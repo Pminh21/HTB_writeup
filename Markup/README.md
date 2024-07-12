@@ -25,3 +25,12 @@
 - trong khi quét nmap ta nhận biết được hệ điều hành của mục tiêu là windowns 10
 - Ta sẽ sử dụng <!DOCTYPE foo [ <!ENTITY ext SYSTEM "file:///etc/passwd" > ]> để lấy file rsa của daniel. Thư mục C:\Users\your_username\.ssh\.
 - 
+![image](https://github.com/user-attachments/assets/d41997f3-657d-41b8-9e86-2b5159921c65)
+
+![image](https://github.com/user-attachments/assets/1cee386d-6bb9-49a8-9059-2d15b43da55b)
+
+![image](https://github.com/user-attachments/assets/51234349-f114-45fc-8a8e-cc63c76a3672)
+
+![image](https://github.com/user-attachments/assets/e302ab0c-2a64-4727-a59d-fa17a35ca3e6)
+
+![image](https://github.com/user-attachments/assets/9e90d411-276b-4cef-a292-66faddcfa0a3)
