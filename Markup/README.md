@@ -31,6 +31,7 @@
 
 ![image](https://github.com/user-attachments/assets/51234349-f114-45fc-8a8e-cc63c76a3672)
 
+- Tạo 1 file id_rsa copy đoạn mã vào rồi tiến hành kết nối ssh.
 ![image](https://github.com/user-attachments/assets/e302ab0c-2a64-4727-a59d-fa17a35ca3e6)
 
 ![image](https://github.com/user-attachments/assets/9e90d411-276b-4cef-a292-66faddcfa0a3)
