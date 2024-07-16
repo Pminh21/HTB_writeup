@@ -36,5 +36,7 @@
 
 ![image](https://github.com/user-attachments/assets/9e90d411-276b-4cef-a292-66faddcfa0a3)
 
+- Task 7 What is the file located in the Log-Management folder on the target? job.bat 
 ![image](https://github.com/user-attachments/assets/3b112583-9fde-473d-8c4b-db6ac7797043)
-
+- Ta thấy chữ wevtutil. 
+- Task 8: What executable is mentioned in the file mentioned before? 
