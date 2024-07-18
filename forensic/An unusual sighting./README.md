@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/c5df2da7-d79c-4dce-bf75-5fae30bce2b6)
 
 - Sử dụng netcat: nc  94.237.51.8 49257
 
