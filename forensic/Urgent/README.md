@@ -2,7 +2,8 @@ Tải file về:
 ![image](https://github.com/user-attachments/assets/0b31031f-7464-48d2-b4da-1ee88dbd52cb)
 
 -  Văn bản được chuyển thành mã base 64, chuyển từ base 64 sang text
--  "<div style="font-family: Arial, sans-serif; font-size: 14px;"><span style="font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; font-variant-ligatures: none; text-align: left; white-space: pre-wrap; display: inline !important; color: rgb(209, 210, 211); background-color: rgba(232, 232, 232, 0.04);">Dear Fellow Faction Leader,
+ ```
+<div style="font-family: Arial, sans-serif; font-size: 14px;"><span style="font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; font-variant-ligatures: none; text-align: left; white-space: pre-wrap; display: inline !important; color: rgb(209, 210, 211); background-color: rgba(232, 232, 232, 0.04);">Dear Fellow Faction Leader,
 I hope this message reaches you in good stead amidst the chaos of The Fray. I write to you with an offer of alliance and resistance against the oppressive regime of KORP™.
 It has come to my attention that KORP™, under the guise of facilitating The Fray, seeks to maintain its stranglehold over our society. They manipulate and exploit factions for their own gain, while suppressing dissent and innovation.
 But we refuse to be pawns in their game any longer. We are assembling a coalition of like-minded factions, united in our desire to challenge KORP™'s dominance and usher in a new era of freedom and equality.
@@ -11,8 +12,8 @@ Join us in solidarity against our common oppressor. Together, we can dismantle t
 Reply to this message if you share our vision and are willing to take a stand against KORP™. Together, we will be unstoppable. Please find our online form attached.
 In solidarity,
 Anonymous member
-Leader of the Resistance</span><br></div>�=�ݝ��y��}��m7k���}"
-
+Leader of the Resistance</span><br></div>�=�ݝ��y��}��m7k���}
+```
 ![image](https://github.com/user-attachments/assets/6bf13dc1-b1ed-42a9-a5d5-edb2fafecd46)
 
 - Chuyển tiếp sang text
