@@ -28,7 +28,7 @@ document.write(unescape('%3c%68%74%6d%6c%3e%0d%0a%3c%68%65%61%64%3e%0d%0a%3c%74%
 �{F�����}���ߧ�駞뇸{"
 
 - Nhận biết đây là mã Hex. chuyển tiếp từ mã hex sang text:
-- "<html>
+<html>
 <head>
 <title> >_ </title>
 <center><h1>404 Not Found</h1></center>
@@ -47,5 +47,6 @@ Sub window_onload
 end sub
 </script>
 </head>
-</html>"
-flag: HTB{4n0th3r_d4y_4n0th3r_ph1shi1ng_4tt3mpT}
+</html>
+
+- flag: HTB{4n0th3r_d4y_4n0th3r_ph1shi1ng_4tt3mpT}
