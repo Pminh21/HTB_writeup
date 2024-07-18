@@ -16,7 +16,8 @@ Leader of the Resistance</span><br></div>�=�ݝ��y��}��m7k��
 ![image](https://github.com/user-attachments/assets/6bf13dc1-b1ed-42a9-a5d5-edb2fafecd46)
 
 - Chuyển tiếp sang text
-"<html>
+ ```
+<html>
 <head>
 <title></title>
 <body>
@@ -26,8 +27,9 @@ document.write(unescape('%3c%68%74%6d%6c%3e%0d%0a%3c%68%65%61%64%3e%0d%0a%3c%74%
 </body>
 </html>
 �{F�����}���ߧ�駞뇸{"
-
+```
 - Nhận biết đây là mã Hex. chuyển tiếp từ mã hex sang text:
+```
 <html>
 <head>
 <title> >_ </title>
@@ -48,5 +50,5 @@ end sub
 </script>
 </head>
 </html>
-
+```
 - flag: HTB{4n0th3r_d4y_4n0th3r_ph1shi1ng_4tt3mpT}
