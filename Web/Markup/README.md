@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/db6f4da9-539a-4b4d-a801-06ab982506b7)- ip: 10.129.229.142 
+- ip: 10.129.229.142 
 - scan nmap: nmap -sC -Pn -A 'ip' trong đó -A là quét hệ điều hành
 
   ![image](https://github.com/Pminh21/HTB_writeup/assets/169346714/5a6f6d94-7ec6-458b-b9b5-273598c8a0d1)
