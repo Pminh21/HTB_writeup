@@ -4,7 +4,7 @@
 
 - nmap -T4 -sC  10.10.10.138
 
-![Image 2](image/image2.png)
+    ![Image 2](image/image2.png)
 
 - Có cổng 20 và cổng 80 mở 
 ![Image 3](image/image3.png)
