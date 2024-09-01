@@ -88,3 +88,55 @@ email: chic@hackthebox.com
 password:123
 ```
 - Sau khi đã tạo tài khoản xong, login vào 
+![image 7](image/7.png)
+- ở phần bên dưới lab/access
+![image 8](image/8.png)
+- Sau khi ấn vào connection pack, 1 file vpn sẽ được tải xuống để người dùng kết nối tới nền tảng.
+![image 9](image/9.png)
+- Kết nối tới /api/v1/user/vpn/generate để gen ra vpn
+![image 10](image/10.png)
+- /api/v1 sẽ có mô tả về full api 
+```
+{
+  "v1": { 
+    "user": {
+      "GET": {
+        "/api/v1": "Route List",  
+        "/api/v1/invite/how/to/generate": "Instructions on invite code generation", 
+        "/api/v1/invite/generate": "Generate invite code",
+        "/api/v1/invite/verify": "Verify invite code",
+        "/api/v1/user/auth": "Check if user is authenticated",
+        "/api/v1/user/vpn/generate": "Generate a new VPN configuration",
+        "/api/v1/user/vpn/regenerate": "Regenerate VPN configuration",
+        "/api/v1/user/vpn/download": "Download OVPN file"
+      },
+      "POST": {
+        "/api/v1/user/register": "Register a new user",
+        "/api/v1/user/login": "Login with existing user"
+      }
+    },
+    "admin": {
+      "GET": {
+        "/api/v1/admin/auth": "Check if user is admin"
+      },
+      "POST": {
+        "/api/v1/admin/vpn/generate": "Generate VPN for specific user"
+      },
+      "PUT": {
+        "/api/v1/admin/settings/update": "Update user settings"
+      }
+    }
+  }
+}
+```
+- Thử truy cập vào: /api/v1/admin/auth xem có được không, khả năng là không được vì không có tài khoản admin.
+![image 11](image/11.png)
+- Tiếp tục thử truy cập: /api/v1/admin/vpn/generate
+![image 12](image/13.png)
+- Cuối cùng đến: /api/v1/admin/settings/update
+![image 13](image/14.png)
+- thay vì mã lỗi 401 thì đã thành 200 truy cập được, thường thường APIs sử dụng JSON.
+- Bây giờ ta nhập thử  Content-Type: application/json vào trong request xem 
+![image 14](image/15.png) 
+- Ta thêm trường email: chic@hackthebox.com
+![image 15](image/16.png)
