@@ -1,1 +1,3 @@
 WRITEUP-HTB
+
+- Trong bài viết này, tôi sẽ chia sẻ quá trình khai thác lỗ hổng và giải quyết thử thách trên nền tảng Hack The Box (HTB). Đây là một môi trường thực hành tuyệt vời cho những ai yêu thích và muốn nâng cao kỹ năng về an ninh mạng, đặc biệt là các kỹ thuật tấn công và bảo mật hệ thống. Trong writeup này, tôi sẽ hướng dẫn chi tiết các bước từ việc phát hiện lỗ hổng đến khai thác thành công, bao gồm các kỹ thuật như scanning, enumeration, exploitation, và privilege escalation. Hy vọng thông qua bài viết này, các bạn sẽ hiểu rõ hơn về cách tiếp cận và giải quyết một thử thách HTB cũng như mở rộng kiến thức về an ninh mạng.
